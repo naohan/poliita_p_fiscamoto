@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Política de Privacidad — FiscaMoto</title>
+    <meta
+      name="description"
+      content="Política de Privacidad de FiscaMoto (Municipalidad Distrital de La Joya)."
+    />
+    <style>
+      :root {
+        --bg: #0b1020;
+        --card: #101a33;
+        --text: #eaf0ff;
+        --muted: #b8c4e6;
+        --border: rgba(255, 255, 255, 0.12);
+        --accent: #7aa7ff;
+        --accent2: #a7f3d0;
+        --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+        --max: 920px;
+      }
+
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #f6f7fb;
+          --card: #ffffff;
+          --text: #0f172a;
+          --muted: #475569;
+          --border: rgba(15, 23, 42, 0.12);
+          --accent: #1d4ed8;
+          --accent2: #0f766e;
+          --shadow: 0 18px 50px rgba(2, 8, 23, 0.08);
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial,
+          "Noto Sans", "Liberation Sans", sans-serif;
+        line-height: 1.6;
+        color: var(--text);
+        background: radial-gradient(
+            1200px 700px at 20% -10%,
+            rgba(122, 167, 255, 0.22),
+            transparent 55%
+          ),
+          radial-gradient(
+            900px 600px at 95% 10%,
+            rgba(167, 243, 208, 0.18),
+            transparent 55%
+          ),
+          var(--bg);
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .wrap {
+        max-width: var(--max);
+        margin: 0 auto;
+        padding: 28px 18px 60px;
+      }
+
+      header {
+        margin: 10px 0 18px;
+      }
+
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--muted);
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 6px 10px;
+        backdrop-filter: blur(8px);
+      }
+
+      h1 {
+        font-size: clamp(26px, 3.6vw, 40px);
+        margin: 14px 0 8px;
+        line-height: 1.18;
+        letter-spacing: -0.02em;
+      }
+
+      .subtitle {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .card {
+        background: color-mix(in srgb, var(--card) 96%, transparent);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+        padding: 14px 18px;
+        border-bottom: 1px solid var(--border);
+        background: linear-gradient(
+          90deg,
+          rgba(122, 167, 255, 0.14),
+          rgba(167, 243, 208, 0.08)
+        );
+      }
+
+      .meta strong {
+        font-weight: 650;
+      }
+
+      .meta span {
+        color: var(--muted);
+      }
+
+      main {
+        padding: 18px;
+      }
+
+      h2 {
+        margin: 22px 0 10px;
+        font-size: 18px;
+        letter-spacing: -0.01em;
+      }
+
+      h2:first-child {
+        margin-top: 0;
+      }
+
+      p {
+        margin: 10px 0;
+      }
+
+      ul {
+        margin: 10px 0 10px 22px;
+      }
+
+      li {
+        margin: 6px 0;
+      }
+
+      .note {
+        margin: 12px 0;
+        padding: 12px 14px;
+        border-left: 3px solid var(--accent);
+        background: color-mix(in srgb, var(--card) 88%, transparent);
+        border-radius: 12px;
+        color: var(--muted);
+      }
+
+      .toc {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 10px;
+        margin: 14px 0 6px;
+        padding: 0;
+        list-style: none;
+      }
+
+      .toc a {
+        display: block;
+        text-decoration: none;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 10px 12px;
+        color: var(--muted);
+        background: color-mix(in srgb, var(--card) 92%, transparent);
+      }
+
+      .toc a:hover {
+        border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+        color: var(--text);
+      }
+
+      footer {
+        margin-top: 14px;
+        color: var(--muted);
+        font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 18px;
+        border-top: 1px solid var(--border);
+      }
+
+      .print {
+        border: 1px solid var(--border);
+        background: transparent;
+        color: var(--muted);
+        padding: 8px 10px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      .print:hover {
+        color: var(--text);
+        border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+      }
+
+      @media print {
+        body {
+          background: white;
+          color: #0f172a;
+        }
+        .wrap {
+          max-width: none;
+          padding: 0;
+        }
+        .card {
+          box-shadow: none;
+          border: none;
+          border-radius: 0;
+        }
+        .meta,
+        footer,
+        .toc,
+        .badge {
+          display: none !important;
+        }
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="badge">Documento informativo</div>
+        <h1>Política de Privacidad — FiscaMoto</h1>
+        <p class="subtitle">Municipalidad Distrital de La Joya</p>
+      </header>
+
+      <section class="card" aria-label="Política de Privacidad">
+        <div class="meta">
+          <div><strong>Última actualización:</strong> <span>8 de mayo de 2026</span></div>
+          <div><strong>Publicación:</strong> <span>GitHub Pages</span></div>
+          <div><strong>Contacto:</strong> <span>(054) 492021</span></div>
+        </div>
+
+        <main>
+          <p>
+            La Municipalidad Distrital de La Joya (en adelante, <strong>“la Municipalidad”</strong>)
+            pone a disposición la presente Política de Privacidad para informar cómo la aplicación
+            móvil <strong>FiscaMoto</strong> (en adelante, <strong>“la App”</strong>) trata los datos
+            personales y datos sensibles necesarios para la fiscalización y control del transporte
+            motorizado, así como para el registro de evidencia y trazabilidad de las intervenciones.
+          </p>
+
+          <ul class="toc" aria-label="Contenido">
+            <li><a href="#responsable">1) Responsable del tratamiento</a></li>
+            <li><a href="#alcance">2) Alcance</a></li>
+            <li><a href="#datos">3) Datos que tratamos</a></li>
+            <li><a href="#finalidades">4) Finalidades del tratamiento</a></li>
+            <li><a href="#base-legal">5) Base legal (o fundamento)</a></li>
+            <li><a href="#permisos">6) Permisos del dispositivo</a></li>
+            <li><a href="#almacenamiento">7) Almacenamiento y transferencia</a></li>
+            <li><a href="#comparticion">8) Compartición de datos</a></li>
+            <li><a href="#conservacion">9) Conservación de datos</a></li>
+            <li><a href="#seguridad">10) Seguridad de la información</a></li>
+            <li><a href="#derechos">11) Derechos y consultas</a></li>
+            <li><a href="#terceros">12) Enlaces y sitios de terceros</a></li>
+            <li><a href="#cambios">13) Cambios a esta Política</a></li>
+          </ul>
+
+          <h2 id="responsable">1) Responsable del tratamiento</h2>
+          <ul>
+            <li><strong>Responsable:</strong> Municipalidad Distrital de La Joya</li>
+            <li><strong>Domicilio:</strong> H5GJ+QPR, La Joya 04406</li>
+            <li><strong>Teléfono:</strong> (054) 492021</li>
+          </ul>
+
+          <h2 id="alcance">2) Alcance</h2>
+          <p>
+            Esta Política aplica al uso de la App FiscaMoto por parte de fiscalizadores/usuarios
+            autorizados y al tratamiento de datos realizado a través de:
+          </p>
+          <ul>
+            <li>La App instalada en el dispositivo.</li>
+            <li>
+              Los servicios backend (API) consumidos por la App para autenticación y gestión de
+              información de fiscalización.
+            </li>
+          </ul>
+
+          <h2 id="datos">3) Datos que tratamos</h2>
+          <p>
+            Dependiendo de las funcionalidades utilizadas, la App puede tratar las siguientes
+            categorías:
+          </p>
+
+          <h3>3.1. Datos de autenticación y usuario fiscalizador</h3>
+          <ul>
+            <li>Usuario (username) y credenciales para el acceso a la App.</li>
+            <li>Token de autenticación emitido por el servidor para mantener la sesión.</li>
+          </ul>
+          <div class="note">
+            La App puede utilizar almacenamiento local para mantener la sesión y facilitar el
+            acceso (por ejemplo, guardando token y datos de usuario en el dispositivo).
+          </div>
+
+          <h3>3.2. Información del dispositivo (para seguridad y control de acceso)</h3>
+          <p>Durante el inicio de sesión, la App puede enviar al servidor información del dispositivo, como:</p>
+          <ul>
+            <li>Identificador del dispositivo (deviceId).</li>
+            <li>Plataforma (Android/iOS).</li>
+            <li>Modelo del dispositivo.</li>
+            <li>Versión del sistema operativo.</li>
+          </ul>
+          <p>
+            Esta información se usa para control de seguridad, trazabilidad y compatibilidad del
+            servicio.
+          </p>
+
+          <h3>3.3. Datos de fiscalización y evidencia</h3>
+          <p>La App puede registrar y tratar información asociada a intervenciones, tales como:</p>
+          <ul>
+            <li>Placa del vehículo y datos vinculados a la fiscalización.</li>
+            <li>Observaciones y checklist de verificación.</li>
+            <li>Datos asociados a actas conformes y no conformes (según el flujo de la App).</li>
+          </ul>
+          <p>Asimismo, la App permite registrar evidencia:</p>
+          <ul>
+            <li>Fotografías capturadas desde la cámara del dispositivo.</li>
+            <li>Fecha y hora de captura.</li>
+            <li>Coordenadas (latitud/longitud) asociadas a la evidencia.</li>
+          </ul>
+
+          <h3>3.4. Datos de ubicación</h3>
+          <p>La App puede acceder a la ubicación del dispositivo para:</p>
+          <ul>
+            <li>Registrar coordenadas como evidencia durante la fiscalización.</li>
+          </ul>
+          <div class="note">
+            <strong>Importante:</strong> La App no solicita ni utiliza ubicación en segundo plano.
+            La ubicación se obtiene solo mientras el usuario usa la App y realiza acciones
+            relacionadas al registro de evidencia o control.
+          </div>
+
+          <h2 id="finalidades">4) Finalidades del tratamiento</h2>
+          <p>La Municipalidad trata los datos a través de la App con las siguientes finalidades:</p>
+          <ul>
+            <li>Autenticación y control de acceso a usuarios autorizados.</li>
+            <li>
+              Gestión de fiscalización: consulta y registro de información necesaria para operativos
+              y controles.
+            </li>
+            <li>
+              Generación y registro de evidencias (fotos + coordenadas + fecha/hora) asociadas a
+              intervenciones.
+            </li>
+            <li>Trazabilidad y auditoría de acciones realizadas en la App.</li>
+            <li>
+              Mejora del servicio y soporte técnico, incluyendo diagnóstico de errores y
+              compatibilidad.
+            </li>
+          </ul>
+
+          <h2 id="base-legal">5) Base legal (o fundamento)</h2>
+          <p>
+            Los datos se tratan para el cumplimiento de funciones de fiscalización y control a cargo
+            de la Municipalidad, y para la prestación de la funcionalidad de la App a usuarios
+            autorizados. Cuando la App requiere permisos del dispositivo (cámara/ubicación), el
+            usuario puede otorgarlos o denegarlos desde el sistema operativo.
+          </p>
+
+          <h2 id="permisos">6) Permisos del dispositivo</h2>
+          <p>La App puede solicitar los siguientes permisos:</p>
+          <ul>
+            <li><strong>Cámara:</strong> para capturar evidencia fotográfica.</li>
+            <li>
+              <strong>Ubicación (mientras la App está en uso):</strong> para asociar coordenadas a
+              la evidencia de fiscalización.
+            </li>
+          </ul>
+          <p>
+            Si el usuario deniega permisos, algunas funciones (por ejemplo, captura de evidencia con
+            coordenadas) pueden no estar disponibles o funcionar de manera limitada.
+          </p>
+
+          <h2 id="almacenamiento">7) Almacenamiento y transferencia de datos</h2>
+          <ul>
+            <li>
+              La App se comunica con servicios backend a través de internet para autenticación y
+              operaciones relacionadas a la fiscalización.
+            </li>
+            <li>
+              Las fotografías/evidencias pueden guardarse temporalmente en el dispositivo y, según
+              el flujo de registro, enviarse al servidor para su gestión.
+            </li>
+            <li>
+              Para almacenamiento de evidencias y archivos, pueden utilizarse servicios de
+              infraestructura en la nube (por ejemplo, Amazon Web Services (AWS) S3), administrados
+              por la Municipalidad o por proveedores bajo instrucciones de la Municipalidad.
+            </li>
+          </ul>
+
+          <h2 id="comparticion">8) Compartición de datos</h2>
+          <p>La Municipalidad no vende datos personales. Los datos pueden compartirse únicamente en los siguientes casos:</p>
+          <ul>
+            <li>
+              Con proveedores de infraestructura tecnológica (por ejemplo, hosting/API y
+              almacenamiento en la nube) que actúan como encargados del tratamiento para operar el
+              servicio.
+            </li>
+            <li>Cuando exista una obligación legal o requerimiento de autoridad competente.</li>
+          </ul>
+
+          <h2 id="conservacion">9) Conservación de datos</h2>
+          <p>
+            Los datos se conservan por el tiempo necesario para cumplir las finalidades descritas y
+            obligaciones legales/administrativas aplicables.
+          </p>
+          <p><strong>Plazos de retención:</strong> no consignado.</p>
+
+          <h2 id="seguridad">10) Seguridad de la información</h2>
+          <p>
+            La Municipalidad implementa medidas razonables de seguridad para proteger la información
+            contra accesos no autorizados, alteración, pérdida o destrucción. Estas medidas pueden
+            incluir control de acceso, autenticación, y protecciones en la transmisión y
+            almacenamiento.
+          </p>
+
+          <h2 id="derechos">11) Derechos y consultas</h2>
+          <p>
+            El titular de datos (o quien corresponda según el marco aplicable) puede solicitar
+            información o ejercer derechos de acceso, rectificación, cancelación/supresión u
+            oposición, según corresponda.
+          </p>
+          <ul>
+            <li><strong>Canal de contacto:</strong> Teléfono (054) 492021</li>
+            <li><strong>Domicilio:</strong> H5GJ+QPR, La Joya 04406</li>
+            <li><strong>Asunto sugerido:</strong> “Privacidad FiscaMoto – Solicitud”</li>
+          </ul>
+          <p>
+            La Municipalidad podrá solicitar información adicional para verificar la identidad del
+            solicitante.
+          </p>
+
+          <h2 id="terceros">12) Enlaces y sitios de terceros</h2>
+          <p>
+            La App puede abrir enlaces externos (por ejemplo, la presente Política). La Municipalidad
+            no es responsable por prácticas de privacidad de sitios externos.
+          </p>
+
+          <h2 id="cambios">13) Cambios a esta Política</h2>
+          <p>
+            La Municipalidad puede actualizar esta Política cuando sea necesario. La fecha de
+            “Última actualización” indicará el último cambio.
+          </p>
+        </main>
+
+        <footer>
+          <div>© Municipalidad Distrital de La Joya — FiscaMoto</div>
+          <button class="print" type="button" onclick="window.print()">Imprimir / Guardar PDF</button>
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>
